@@ -1,0 +1,12 @@
+﻿.dark {
+    background: #121212;
+    color: white;
+}
+
+    .dark .chat-box {
+        background: #1f1f1f;
+    }
+
+    .dark .header {
+        background: black;
+    }

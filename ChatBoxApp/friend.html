@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>ChatBox - Friends</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+        <div class="header">👥 Friends List</div>
+
+        <div class="chat-box">
+
+            <div onclick="openChat('Rahul')" class="message">Rahul</div>
+            <div onclick="openChat('Riya')" class="message">Riya</div>
+            <div onclick="openChat('Aman')" class="message">Aman</div>
+            <div onclick="openChat('Kiran')" class="message">Kiran</div>
+
+        </div>
+
+        <button onclick="goProfile()">My Profile</button>
+    </div>
+
+    <script>
+
+function openChat(name){
+  localStorage.setItem("currentFriend", name);
+  window.location.href = "index.html";
+}
+
+function goProfile(){
+  window.location.href = "profile.html";
+}
+
+    </script>
+
+</body>
+</html>

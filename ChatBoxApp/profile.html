@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>My Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app">
+        <div class="header">My Profile</div>
+
+        <div style="padding:20px;">
+            <h3>Name: <span id="name"></span></h3>
+            <h3>Mobile: <span id="mobile"></span></h3>
+
+            <button onclick="goBack()">Back</button>
+        </div>
+    </div>
+
+    <script>
+document.getElementById("name").innerText = localStorage.getItem("chatUser");
+document.getElementById("mobile").innerText = localStorage.getItem("chatMobile");
+
+function goBack(){
+  window.location.href = "friends.html";
+}
+    </script>
+
+</body>
+</html>

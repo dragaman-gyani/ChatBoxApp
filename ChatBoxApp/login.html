@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>ChatBox - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app">
+        <div class="header">🔐 ChatBox Login</div>
+
+        <div style="padding: 20px;">
+            <input type="text" id="username" placeholder="Enter your name" style="width:100%; padding:10px; margin-bottom:10px;">
+            <button style="width:100%; padding:10px;" onclick="login()">Login</button>
+        </div>
+    </div>
+
+    <script>
+function login() {
+  var name = document.getElementById("username").value;
+
+  if (name != "") {
+    localStorage.setItem("chatUser", name);
+    window.location.href = "index.html";
+  } else {
+    alert("Please enter your name");
+  }
+}
+    </script>
+
+</body>
+</html>
